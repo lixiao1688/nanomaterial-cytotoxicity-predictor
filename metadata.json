@@ -1,0 +1,120 @@
+{
+  "materials": {
+    "Ag": {
+      "size_nm": 16.7,
+      "electronegativity": 1.93,
+      "ionic_radius_pm": 115.0,
+      "oxidation_state": 1.0,
+      "atomic_number": 47.0,
+      "atomic_mass": 107.87
+    },
+    "CeO2": {
+      "size_nm": 33.0,
+      "electronegativity": 1.12,
+      "ionic_radius_pm": 101.0,
+      "oxidation_state": 4.0,
+      "atomic_number": 58.0,
+      "atomic_mass": 140.12
+    },
+    "MWCNT": {
+      "size_nm": 13.6,
+      "electronegativity": 2.55,
+      "ionic_radius_pm": 15.0,
+      "oxidation_state": 4.0,
+      "atomic_number": 6.0,
+      "atomic_mass": 12.01
+    },
+    "SiO2": {
+      "size_nm": 18.3,
+      "electronegativity": 1.9,
+      "ionic_radius_pm": 40.0,
+      "oxidation_state": 4.0,
+      "atomic_number": 14.0,
+      "atomic_mass": 28.09
+    },
+    "TiO2": {
+      "size_nm": 150.0,
+      "electronegativity": 1.54,
+      "ionic_radius_pm": 60.5,
+      "oxidation_state": 4.0,
+      "atomic_number": 22.0,
+      "atomic_mass": 47.87
+    },
+    "ZnO": {
+      "size_nm": 147.0,
+      "electronegativity": 1.65,
+      "ionic_radius_pm": 74.0,
+      "oxidation_state": 2.0,
+      "atomic_number": 30.0,
+      "atomic_mass": 65.38
+    }
+  },
+  "cell_lines": [
+    "3T3",
+    "A549",
+    "A549:THP1",
+    "BEAS-2B",
+    "CACO-2",
+    "CAKI-1",
+    "CALU-3",
+    "GF",
+    "HEP3B",
+    "HEPG2",
+    "RAW 264.7",
+    "SAOS",
+    "THP-1",
+    "U937"
+  ],
+  "feature_order": [
+    "size_nm",
+    "electronegativity",
+    "ionic_radius_pm",
+    "oxidation_state",
+    "atomic_number",
+    "atomic_mass",
+    "log_dose",
+    "cell_3T3",
+    "cell_A549",
+    "cell_A549:THP1",
+    "cell_BEAS-2B",
+    "cell_CACO-2",
+    "cell_CAKI-1",
+    "cell_CALU-3",
+    "cell_GF",
+    "cell_HEP3B",
+    "cell_HEPG2",
+    "cell_RAW 264.7",
+    "cell_SAOS",
+    "cell_THP-1",
+    "cell_U937"
+  ],
+  "n_features": 21,
+  "mat_features": [
+    "size_nm",
+    "electronegativity",
+    "ionic_radius_pm",
+    "oxidation_state",
+    "atomic_number",
+    "atomic_mass"
+  ],
+  "model_config": {
+    "hidden": [
+      128,
+      64
+    ],
+    "dropout": 0.4,
+    "batchnorm": true,
+    "epochs": 150,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "threshold": 0.5,
+  "positive_class": "cytotoxic (viability < 50%)",
+  "training_n": 2655,
+  "toxic_rate": 0.26854991912841797
+}
